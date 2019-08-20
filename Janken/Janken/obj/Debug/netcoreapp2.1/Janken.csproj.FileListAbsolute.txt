@@ -1,0 +1,11 @@
+C:\Users\hiroaki.takahashi\Source\repos\Janken\Janken\bin\Debug\netcoreapp2.1\Janken.deps.json
+C:\Users\hiroaki.takahashi\Source\repos\Janken\Janken\bin\Debug\netcoreapp2.1\Janken.runtimeconfig.json
+C:\Users\hiroaki.takahashi\Source\repos\Janken\Janken\bin\Debug\netcoreapp2.1\Janken.runtimeconfig.dev.json
+C:\Users\hiroaki.takahashi\Source\repos\Janken\Janken\bin\Debug\netcoreapp2.1\Janken.dll
+C:\Users\hiroaki.takahashi\Source\repos\Janken\Janken\bin\Debug\netcoreapp2.1\Janken.pdb
+C:\Users\hiroaki.takahashi\Source\repos\Janken\Janken\obj\Debug\netcoreapp2.1\Janken.csprojAssemblyReference.cache
+C:\Users\hiroaki.takahashi\Source\repos\Janken\Janken\obj\Debug\netcoreapp2.1\Janken.csproj.CoreCompileInputs.cache
+C:\Users\hiroaki.takahashi\Source\repos\Janken\Janken\obj\Debug\netcoreapp2.1\Janken.AssemblyInfoInputs.cache
+C:\Users\hiroaki.takahashi\Source\repos\Janken\Janken\obj\Debug\netcoreapp2.1\Janken.AssemblyInfo.cs
+C:\Users\hiroaki.takahashi\Source\repos\Janken\Janken\obj\Debug\netcoreapp2.1\Janken.dll
+C:\Users\hiroaki.takahashi\Source\repos\Janken\Janken\obj\Debug\netcoreapp2.1\Janken.pdb
