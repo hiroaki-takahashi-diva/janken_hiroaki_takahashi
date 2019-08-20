@@ -8,13 +8,15 @@ namespace Janken2
         static void Main()
         {
             Console.WriteLine("プレイヤー人数を入力(1～5人)");
-            int Nplayers = int.Parse(Console.ReadLine());
-            Nplayers = Check_Nplayers(Nplayers);
+            string Nplayers_str = Console.ReadLine();
+            Nplayers_str = Check_Nplayers(Nplayers_str);
+            int Nplayers = int.Parse(Nplayers_str);
             Console.WriteLine(Environment.NewLine);
 
             Console.WriteLine("CPU人数を入力(1～5人)");
-            int Ncomputers = int.Parse(Console.ReadLine());
-            Ncomputers = Check_Ncomputers(Ncomputers);
+            string Ncomputers_str = Console.ReadLine();
+            Ncomputers_str = Check_Ncomputers(Ncomputers_str);
+            int Ncomputers = int.Parse(Ncomputers_str);
             Console.WriteLine(Environment.NewLine);
 
             int[] Players = new int[Nplayers];
@@ -27,9 +29,10 @@ namespace Janken2
                 Console.WriteLine("0:グー");
                 Console.WriteLine("1:チョキ");
                 Console.WriteLine("2:パー");
-                int Hand = int.Parse(Console.ReadLine());
+                string Hand_str = Console.ReadLine();
+                Hand_str = Check_Hand(Hand_str);
+                int Hand = int.Parse(Hand_str);
                 Players[i] = Hand;
-                Hand = Check_Hand(Hand);
                 Console.WriteLine("プレイヤー" + i + "は" + Handsn[Hand]);
                 Console.WriteLine(Environment.NewLine);
             }
@@ -51,52 +54,52 @@ namespace Janken2
 
             foreach (int a in HandAll)
             {
-                Console.WriteLine(a);
+                Console.WriteLine(Handsn[a]);
             }
         }
 
-        static int Check_Nplayers(int Nplayers)
+        static string Check_Nplayers(string Nplayers_str)
         {
             // 1～5が入力されるまでループ
             while (true)
             {
-                if (1<= Nplayers && Nplayers <= 5)
+                if (Nplayers_str == "1" || Nplayers_str == "2" || Nplayers_str == "3" || Nplayers_str == "4" || Nplayers_str == "5")
                 {
-                    return Nplayers;
+                    return Nplayers_str;
                 }
                 else
                 {
                     Console.WriteLine(Environment.NewLine);
                     Console.WriteLine("プレイヤー人数を入力(1～5人)");
-                    Nplayers = int.Parse(Console.ReadLine());
+                    Nplayers_str = Console.ReadLine();
                 }
             }
         }
-        static int Check_Ncomputers(int Ncomputers)
+        static string Check_Ncomputers(string Ncomputers_str)
         {
             // 1～5が入力されるまでループ
             while (true)
             {
-                if (1 <= Ncomputers && Ncomputers <= 5)
+                if (Ncomputers_str == "1" || Ncomputers_str == "2" || Ncomputers_str == "3" || Ncomputers_str == "4" || Ncomputers_str == "5")
                 {
-                    return Ncomputers;
+                    return Ncomputers_str;
                 }
                 else
                 {
                     Console.WriteLine(Environment.NewLine);
                     Console.WriteLine("CPU人数を入力(1～5人)");
-                    Ncomputers = int.Parse(Console.ReadLine());
+                    Ncomputers_str = Console.ReadLine();
                 }
             }
         }
-        static int Check_Hand(int Hand)
+        static string Check_Hand(string Hand_str)
         {
             // 0～2が入力されるまでループ
             while (true)
             {
-                if (0 <= Hand && Hand <= 2)
+                if (Hand_str == "0" || Hand_str == "1" || Hand_str == "2")
                 {
-                    return Hand;
+                    return Hand_str;
                 }
                 else
                 {
@@ -106,7 +109,7 @@ namespace Janken2
                     Console.WriteLine("1:チョキ");
                     Console.WriteLine("2:パー");
 
-                    Hand = int.Parse(Console.ReadLine());
+                    Hand_str = Console.ReadLine();
                 }
             }
         }
